@@ -29,8 +29,6 @@ def startGame():
 
     # Initialize the curses window
     curses.initscr()
-    curses.beep()
-    curses.beep()
     window = curses.newwin(HEIGHT, WIDTH, 0, 0)
     window.timeout(TIMEOUT)
     window.keypad(1)
@@ -60,7 +58,6 @@ def startGame():
         # Check if snake has reached the food
         if snake.head.x == food.x and snake.head.y == food.y:
             snake.eatFood(food)
-            curses.beep()
 
         # Use A* algorithm to get the next step
         event = astar.get_next_step(food, snake)

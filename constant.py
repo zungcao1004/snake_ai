@@ -12,7 +12,7 @@ MAX_Y = HEIGHT - 5
 TIMEOUT = 60
 
 # Initial length of the snake
-SNAKE_LEN = 5
+SNAKE_LEN = 2
 
 # Initial position of the snake
 SNAKE_X = SNAKE_LEN + 1
